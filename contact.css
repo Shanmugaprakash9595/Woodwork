@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* === box ==== */
+
+.box {
+  width: 100%;
+  height: 500px;
+  background-color: #2d2014;
+
+
+}
+
+.box p {
+  font-size: 70px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-top: 250px;
+
+  background-color: #2d2014;
+}
+
+
+
+/* ================= HEADER ================= */
+
+ header {
+   width: 90%;
+   height: 80px;
+   background-color: #ffffff;
+
+   position: absolute;
+   top: 50px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1000;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   padding: 0 30px;
+   border-radius: 14px;
+
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+ }
+
+
+ /* ================= LOGO ================= */
+
+ .logo h2 {
+   font-size: 24px;
+   color: #2d2014;
+ }
+
+
+ /* ================= NAV ================= */
+
+ .nav-list {
+   display: flex;
+   align-items: center;
+   gap: 35px;
+   list-style: none;
+ }
+
+ .nav-list li {
+   position: relative;
+   font-size: 16px;
+   cursor: pointer;
+ }
+
+
+ /* ================= LINKS ================= */
+
+ .nav-list li a {
+   text-decoration: none;
+   /* No underline */
+   color: #2d2014;
+   transition: 0.3s;
+ }
+
+
+ /* Hover Effect */
+
+ .nav-list li a:hover {
+   color: #e5a73e;
+ }
+
+ .nav-list li:hover {
+   color: #e5a73e;
+ }
+
+ /* ================= DROPDOWN ================= */
+
+ .pages {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+ }
+
+
+ /* Arrow */
+ /* 
+.arrow {
+  font-size: 12px;
+} */
+
+
+ /* Hidden */
+
+ .dropdown {
+   position: absolute;
+   top: 40px;
+   left: 0;
+
+   background: white;
+   width: 200px;
+   padding: 10px 0;
+
+   border-radius: 10px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+   list-style: none;
+
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(10px);
+
+   transition: 0.3s;
+ }
+
+
+ /* Dropdown Links */
+
+ .dropdown li a {
+   display: block;
+   padding: 10px 20px;
+   color: #2d2014;
+   text-decoration: none;
+   font-size: 17px;
+ }
+
+
+ /* Dropdown Hover */
+
+ .dropdown li a:hover {
+   background: #f7f4ef;
+   color: #e5a73e;
+ }
+
+
+ /* Show Dropdown */
+
+ .pages:hover .dropdown {
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0);
+ }
+
+
+ /* ================= CONTACT BUTTON ================= */
+
+ .contact-btn {
+   background: #e5a73e;
+   padding: 15px 55px;
+   border-radius: 10px;
+   font-weight: bold;
+   cursor: pointer;
+   font-style: italic;
+   font-size: 18px;
+
+   transition: 0.3s;
+ }
+
+ .contact-btn a {
+   text-decoration: none;
+   color: #2d2014;
+ }
+
+ .contact-btn:hover {
+   background: #d89a34;
+ }
+
+
+
+ 
+ /* === box ==== */
+
+ .box {
+   width: 100%;
+   height: 800px;
+   background-color: #2d2014;
+
+
+ }
+
+ .box img {
+   width: 50%;
+ }
+
+ .box2 {
+   margin-left: 600px;
+   position: relative;
+   bottom: 550px;
+ }
+
+ .box2 p {
+   color: white;
+   text-align: center;
+
+ }
+
+ .big {
+   font-size: 60px;
+   font-style: italic;
+   text-align: center;
+   padding-bottom: 80px;
+ }
+
+ .small {
+   font-size: 18px;
+   text-align: center;
+   padding: 0px 50px 50px 50px;
+
+
+ }
+
+
+ .btn-one {
+   background-color: #e5a73e;
+   color: #2d2014;
+   margin-left: 100px;
+   width: 180px;
+   height: 50px;
+   border-radius: 10px;
+   text-decoration: none;
+
+ }
+
+ .btn-one:hover {
+   background-color: #2d2014;
+   color: white;
+ }
+
+ .btn-two {
+   background-color: #2d2014;
+   color: #ffffff;
+   margin-left: 50px;
+   width: 180px;
+   height: 50px;
+   border-radius: 10px;
+ }
+
+ .btn-two:hover {
+   color: #e5a73e;
+   border: 2px solid #e5a73e;
+ }
+
+
+
+
+
+.privacy-policy{
+  display: flex;
+  padding: 150px;
+}
+
+
+
+
+
+
+/* Main Section ========= */
+.privacy-policy {
+  display: flex;
+  gap: 40px;
+  padding: 150px;
+}
+
+.contact-left h3 {
+  font-size: 42px;
+  color: #2c1c10;
+  /* margin-bottom: 20px; */
+}
+
+.contact-left p {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.over {
+  list-style: none;
+}
+
+.over li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  color: #333;
+}
+
+.over i {
+  background: #f0b34a;
+  padding: 10px;
+  border-radius: 8px;
+  color: #000;
+}
+
+
+
+.contactright {
+  width: 55%;
+}
+
+.contact {
+  background: linear-gradient(135deg, #2c1c10, #1a0f08);
+  padding: 40px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  outline: none;
+}
+
+
+
+.contact textarea {
+  height: 120px;
+  
+}
+
+
+
+.contact button {
+  margin-top: 20px;
+  width: 120px;
+  padding: 12px;
+  background: #f0b34a;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: #d99c2f;
+}
+
+
+
+
+ /* footer================= */
+
+
+
+ /* Footer Main */
+ footer {
+   background-color: #2d2014;
+   color: white;
+   width: 100%;
+   margin-top: 130px;
+   padding-bottom: 30px;
+   /* Added */
+ }
+
+
+ /* Footer Content */
+ .footer-section {
+   display: flex;
+   justify-content: space-between;
+   /* height: 300px; */
+   padding: 100px 20px;
+   flex-wrap: wrap;
+   gap: 30px; 
+ }
+
+
+ /* Company Section */
+ .Woodpeople h2 {
+   font-size: 35px;
+   margin-bottom: 20px;
+ }
+
+ .Woodpeople p {
+   font-style: italic;
+   line-height: 28px;
+   max-width: 300px;
+ }
+
+
+ /* Other Sections */
+ .Woodpeople1 h2 {
+   margin-bottom: 15px;
+ }
+
+ .Woodpeople1 p {
+   line-height: 32px;
+   cursor: pointer;
+ }
+
+ .Woodpeople1 p:hover {
+   color: #d35400;
+ }
+
+
+ /* Button */
+ .btn {
+   margin-top: 20px;
+   background-color: #d35400;
+   color: white;
+   border: none;
+   padding: 10px 18px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+
+ .btn:hover {
+   background-color: #e67e22;
+ }
+
+
+ /* Social Icons */
+ .icon {
+   display: flex;
+   gap: 25px;
+   font-size: 26px;
+   margin-top: 30px;
+   color: #d35400;
+ }
+
+ .icon i {
+   cursor: pointer;
+ }
+
+ .icon i:hover {
+   color: white;
+ }
+
+
+ /* Border Line */
+ .footer-line {
+   width: 90%;
+   height: 1px;
+   background-color: rgba(255, 255, 255, 0.3);
+   margin: 20px auto;
+ }
+
+
+ /* Copyright */
+ .copyright {
+   text-align: center;
+   padding: 15px 0 10px;
+   font-size: 14px;
+   color: rgba(255, 255, 255, 0.7);
+ }

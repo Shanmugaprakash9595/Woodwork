@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.box {
+    width: 100%;
+    height: 500px;
+    background-color: #2d2014;
+
+
+}
+
+.box p {
+    font-size: 70px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 250px;
+
+    background-color: #2d2014;
+}
+
+
+
+
+
+ /* ================= HEADER ================= */
+
+ header {
+   width: 90%;
+   height: 80px;
+   background-color: #ffffff;
+
+   position: absolute;
+   top: 50px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1000;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   padding: 0 30px;
+   border-radius: 14px;
+
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+ }
+
+
+ /* ================= LOGO ================= */
+
+ .logo h2 {
+   font-size: 24px;
+   color: #2d2014;
+ }
+
+
+ /* ================= NAV ================= */
+
+ .nav-list {
+   display: flex;
+   align-items: center;
+   gap: 35px;
+   list-style: none;
+ }
+
+ .nav-list li {
+   position: relative;
+   font-size: 16px;
+   cursor: pointer;
+ }
+
+
+ /* ================= LINKS ================= */
+
+ .nav-list li a {
+   text-decoration: none;
+   /* No underline */
+   color: #2d2014;
+   transition: 0.3s;
+ }
+
+
+ /* Hover Effect */
+
+ .nav-list li a:hover {
+   color: #e5a73e;
+ }
+
+ .nav-list li:hover {
+   color: #e5a73e;
+ }
+
+ /* ================= DROPDOWN ================= */
+
+ .pages {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+ }
+
+
+ /* Arrow */
+ /* 
+.arrow {
+  font-size: 12px;
+} */
+
+
+ /* Hidden */
+
+ .dropdown {
+   position: absolute;
+   top: 40px;
+   left: 0;
+
+   background: white;
+   width: 200px;
+   padding: 10px 0;
+
+   border-radius: 10px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+   list-style: none;
+
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(10px);
+
+   transition: 0.3s;
+ }
+
+
+ /* Dropdown Links */
+
+ .dropdown li a {
+   display: block;
+   padding: 10px 20px;
+   color: #2d2014;
+   text-decoration: none;
+   font-size: 17px;
+ }
+
+
+ /* Dropdown Hover */
+
+ .dropdown li a:hover {
+   background: #f7f4ef;
+   color: #e5a73e;
+ }
+
+
+ /* Show Dropdown */
+
+ .pages:hover .dropdown {
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0);
+ }
+
+
+ /* ================= CONTACT BUTTON ================= */
+
+ .contact-btn {
+   background: #e5a73e;
+   padding: 15px 55px;
+   border-radius: 10px;
+   font-weight: bold;
+   cursor: pointer;
+   font-style: italic;
+   font-size: 18px;
+
+   transition: 0.3s;
+ }
+
+ .contact-btn a {
+   text-decoration: none;
+   color: #2d2014;
+ }
+
+ .contact-btn:hover {
+   background: #d89a34;
+ }
+
+
+/* =============== OUR WORK =============== */
+
+.title-2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 50px;
+    color: #2d2014;
+}
+
+
+.recent-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 50px 80px ;
+
+
+}
+
+.recent-blogs a{
+  text-decoration: none;
+  color: black;
+}
+
+.recent-card {
+    min-width: 350px;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.blogs-image {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.blogs-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+}
+
+
+.blogs-image:hover img {
+    transform: scale(1.2);
+
+}
+
+.recent-card h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.recent-card:hover h3 {
+    color: #d35400;
+    transition: color 0.3s ease;
+}
+
+.recent-card p {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #555;
+}
+
+
+
+
+
+
+ /* footer================= */
+
+
+
+ /* Footer Main */
+ footer {
+   background-color: #2d2014;
+   color: white;
+   width: 100%;
+   margin-top: 130px;
+   padding-bottom: 30px;
+   /* Added */
+ }
+
+
+ /* Footer Content */
+ .footer-section {
+   display: flex;
+   justify-content: space-between;
+   /* height: 300px; */
+   padding: 100px 20px;
+   flex-wrap: wrap;
+   gap: 30px; 
+ }
+
+
+ /* Company Section */
+ .Woodpeople h2 {
+   font-size: 35px;
+   margin-bottom: 20px;
+ }
+
+ .Woodpeople p {
+   font-style: italic;
+   line-height: 28px;
+   max-width: 300px;
+ }
+
+
+ /* Other Sections */
+ .Woodpeople1 h2 {
+   margin-bottom: 15px;
+ }
+
+ .Woodpeople1 p {
+   line-height: 32px;
+   cursor: pointer;
+ }
+
+ .Woodpeople1 p:hover {
+   color: #d35400;
+ }
+
+
+ /* Button */
+ .btn {
+   margin-top: 20px;
+   background-color: #d35400;
+   color: white;
+   border: none;
+   padding: 10px 18px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+
+ .btn:hover {
+   background-color: #e67e22;
+ }
+
+
+ /* Social Icons */
+ .icon {
+   display: flex;
+   gap: 25px;
+   font-size: 26px;
+   margin-top: 30px;
+   color: #d35400;
+ }
+
+ .icon i {
+   cursor: pointer;
+ }
+
+ .icon i:hover {
+   color: white;
+ }
+
+
+ /* Border Line */
+ .footer-line {
+   width: 90%;
+   height: 1px;
+   background-color: rgba(255, 255, 255, 0.3);
+   margin: 20px auto;
+ }
+
+
+ /* Copyright */
+ .copyright {
+   text-align: center;
+   padding: 15px 0 10px;
+   font-size: 14px;
+   color: rgba(255, 255, 255, 0.7);
+ }
+

@@ -1,0 +1,164 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+  width: 90%;
+  height: 80px;
+  background-color: #ffffff;
+
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+  border-radius: 14px;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+/* ================= LOGO ================= */
+
+.logo h2 {
+  font-size: 24px;
+  color: #2d2014;
+}
+
+
+/* ================= NAV ================= */
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+}
+
+.nav-list li {
+  position: relative;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* ================= LINKS ================= */
+
+.nav-list li a {
+  text-decoration: none;   /* No underline */
+  color: #2d2014;
+  transition: 0.3s;
+}
+
+
+/* Hover Effect */
+
+.nav-list li a:hover {
+  color: #e5a73e;
+}
+.nav-list li:hover {
+  color: #e5a73e;
+}
+
+/* ================= DROPDOWN ================= */
+
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* Arrow */
+/* 
+.arrow {
+  font-size: 12px;
+} */
+
+
+/* Hidden */
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+
+  background: white;
+  width: 200px;
+  padding: 10px 0;
+
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  list-style: none;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+
+  transition: 0.3s;
+}
+
+
+/* Dropdown Links */
+
+.dropdown li a {
+  display: block;
+  padding: 10px 20px;
+  color: #2d2014;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* Dropdown Hover */
+
+.dropdown li a:hover {
+  background: #f7f4ef;
+  color: #e5a73e;
+}
+
+
+/* Show Dropdown */
+
+.pages:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+/* ================= CONTACT BUTTON ================= */
+
+.contact-btn {
+  background: #e5a73e;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.contact-btn a {
+  text-decoration: none;
+  color: #2d2014;
+}
+
+.contact-btn:hover {
+  background: #d89a34;
+}
