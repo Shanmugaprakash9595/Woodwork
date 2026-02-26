@@ -32,9 +32,10 @@
 
  /* ================= LOGO ================= */
 
- .logo h2 {
+ .logo p {
    font-size: 24px;
    color: #2d2014;
+   font-weight: bold;
  }
 
 
@@ -167,7 +168,7 @@
 
 
 
- 
+
  /* === box ==== */
 
  .box {
@@ -194,11 +195,12 @@
 
  }
 
- .big {
+ .box h1 {
    font-size: 60px;
    font-style: italic;
    text-align: center;
    padding-bottom: 80px;
+   color: white;
  }
 
  .small {
@@ -263,8 +265,8 @@
 
  }
 
- .content h2 {
-   font-size: 50px;
+ .content h3 {
+   font-size: 35px;
    font-style: italic;
    font-weight: bold;
    margin-top: 5cm;
@@ -310,8 +312,9 @@
    align-items: center;
  }
 
- .title-1 h2 {
+ .title-1 h3 {
    padding: 30px;
+   font-size: 50px;
  }
 
  /* Buttons */
@@ -416,10 +419,12 @@
    gap: 40px;
    padding: 0 50px;
  }
-.our-Service a{
-  text-decoration: none;
-  color: black;
-}
+
+ .our-Service a {
+   text-decoration: none;
+   color: black;
+ }
+
  /* Card */
  .work-card {
    background-color: #e5a73e;
@@ -473,8 +478,8 @@
    transition: 0.3s;
  }
 
- 
- 
+
+
 
  .our-btn:hover {
    transform: scale(1.05);
@@ -805,7 +810,7 @@
 
  /* Left Side */
 
- .testimonial-left h1 {
+ .testimonial-left h3 {
    font-size: 48px;
    margin-bottom: 10px;
    color: #1d140c;
@@ -959,12 +964,12 @@
    /* height: 300px; */
    padding: 100px 20px;
    flex-wrap: wrap;
-   gap: 30px; 
+   gap: 30px;
  }
 
 
  /* Company Section */
- .Woodpeople h2 {
+ .Woodpeople h3 {
    font-size: 35px;
    margin-bottom: 20px;
  }
