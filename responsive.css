@@ -1,0 +1,205 @@
+/* Global responsive helpers for all pages */
+html,
+body {
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  header {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    padding: 12px 16px !important;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
+    gap: 14px !important;
+    flex-wrap: wrap;
+  }
+
+  .contact-btn {
+    margin-left: 0 !important;
+    padding: 10px 18px !important;
+    font-size: 15px !important;
+  }
+
+  .dropdown {
+    width: min(240px, 92vw) !important;
+  }
+
+  .box,
+  .all {
+    height: auto !important;
+    min-height: 320px;
+  }
+
+  .box img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .box2 {
+    margin-left: 0 !important;
+    bottom: 0 !important;
+    padding: 20px 16px !important;
+  }
+
+  .content,
+  .our-Service,
+  .services-section,
+  .services-section-5,
+  .recent-blogs,
+  .section-big,
+  .testimonial-section,
+  .des,
+  .over,
+  .privacy-policy,
+  .com {
+    grid-template-columns: 1fr !important;
+    display: grid !important;
+    gap: 20px !important;
+  }
+
+  .service-card,
+  .service-card-1,
+  .service-card-5,
+  .recent-card,
+  .pricing-content,
+  .pricing-content-1,
+  .work-card {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .service-image img,
+  .service-image-1 img,
+  .service-image-5 img,
+  .blogs-image img,
+  .work-image img {
+    height: auto !important;
+    max-height: 420px;
+  }
+
+  .title,
+  .title-1,
+  .title-2,
+  .pricing-title,
+  .section-steps,
+  .overall,
+  .privacy-policy,
+  .policy-content,
+  .para,
+  .para2,
+  .para3,
+  .para4 {
+    margin-left: 0 !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .des,
+  .pricing,
+  .footer-section {
+    padding: 24px 16px !important;
+  }
+
+  .right-num {
+    padding-left: 0 !important;
+  }
+
+  footer {
+    height: auto !important;
+    margin-top: 60px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .box h1,
+  .box h3,
+  .big {
+    font-size: 34px !important;
+    line-height: 1.25;
+    padding-bottom: 24px !important;
+    padding-top: 120px !important;
+  }
+
+  .small,
+  .box p,
+  .para p,
+  .point-2,
+  .right,
+  .recent-card p,
+  .service-card p,
+  .section-process p {
+    font-size: 16px !important;
+    line-height: 1.6;
+  }
+
+  .content h3,
+  .title-1 h3,
+  .title h2,
+  .title-2 h2,
+  .pricing-title h2,
+  .section-steps h2,
+  .left-p,
+  .testimonial-left h3,
+  .policy-content h3,
+  .over h3 {
+    font-size: 28px !important;
+  }
+
+  .btn-one,
+  .btn-two,
+  .our-btn,
+  .right-b,
+  .price-btn {
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+
+  .section-steps {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .box h1,
+  .box h3,
+  .big {
+    font-size: 28px !important;
+  }
+
+  .btn-one,
+  .btn-two {
+    width: 100% !important;
+    margin: 8px 0 !important;
+  }
+
+  .contact-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pricing-content,
+  .pricing-content-1 {
+    height: auto !important;
+  }
+}
