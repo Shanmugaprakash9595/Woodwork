@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shanmugaprakash9595.github.io/Woodwork/sitemap.xml
