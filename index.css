@@ -927,10 +927,12 @@
  .right-b {
    background-color: #1a120a;
    color: white;
+   display: inline-block;
    padding: 13px 40px;
    font-size: 18px;
    font-style: italic;
    border-radius: 10px;
+   text-decoration: none;
    /* padding-right: 50px; */
  }
 
